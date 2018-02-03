@@ -12,7 +12,7 @@ e.g.:
 
 import re, csv
 
-# Make sure "today.log" is in your current working directory
+# Opening command prompt for user to assign log file path  to logFile variable
 logFile = open(input("Enter an absolute log file path:\n"))
 
 logData = logFile.read()
