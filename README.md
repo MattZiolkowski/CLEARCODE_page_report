@@ -1,4 +1,4 @@
-#Hack_Power.py#
+# Hack_Power.py
 
 Hack_power calculator deciphers a code written using strings and assign values
 to given letters and phrases. Values are assigned to letters and phrases as following:
