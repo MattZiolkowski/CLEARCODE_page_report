@@ -1,24 +1,25 @@
-# Hack_Power.py
+# page_report.py
 
-Hack_power calculator deciphers a code written using strings and assign values
-to given letters and phrases. Values are assigned to letters and phrases as following:
-Letters: {'a':1,'b':2, 'c':3}; Phrases: {'ba':10, 'baa':20}
-Additionally, each letter in the code is multiplied by number of occurrences of that letter.
-Example: Code 'abca' has power(i.e. equals to)=(1*1)+(2*1)+(1*3)+(2*1)=8.
-Example(with phrases): Code 'abaa' has power=(1*1)+(1*2)+(1*2)+(2*1)+(3*1)+(20)=28.
+Script page_report.py generates a report from a log file. Script counts requests
+for each URL, ignoring the protocol, ending slash and query string parameters.
+The log file path is read from the command line argument and the string generates report written to
+the standard output. Every line of the result follows the CSV format:
+'<stripped url>',<requests count>
+e.g.:
+'www.google.com',1
 
 # Getting Started
 
-Download a file from my GitHub account. Make sure you have Python3 installed. If you use Windows you are able to
-run the program in command prompt.
+Download a file from my GitHub account. Make sure you have Python3+ installed. If you use Windows you are able to
+run the program in a command prompt.
 
 # Prerequisites
 
-You will need a Python 3.x installed on your computer and Windows to run program through command prompt.
+You will need a Python 3 and above installed on your computer and Windows to run program through command prompt.
 
 # Installing
 
-Save the files on your PC. Make sure you have Python 3.x.x installed. For guidence on installation of Python
+Save the files on your PC. Make sure you have Python 3 and above installed. For guidence on installation of Python
 visit www.python.org.
 
 # Deployment
@@ -30,10 +31,7 @@ Windows command prompt or with other Pythonic environment (e.g. PyCharm).
 
 Python 3.6.1
 -using 're' framework (regex) - Standart framework included into Python Library.
-
-# Versioning
-
-Future releases depend on successful testing and program review.
+-PyCharm
 
 # Authors
 
