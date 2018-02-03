@@ -5,7 +5,7 @@ for each URL, ignoring the protocol, ending slash and query string parameters.
 The log file path is read from the command line argument and the string generates report written to
 the standard output. Every line of the result follows the CSV format:
 
-'<stripped url>',<requests count>
+'stripped url',requests count
 
 e.g.:
 
