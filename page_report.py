@@ -23,18 +23,18 @@ pattern = re.compile("https?:\/\/[a-zA-Z0-9./]+/?[a-zA-Z0-9]+")
 # Searching "today.log" using url regex pattern
 search = pattern.findall(logData)
 
-# Creating list for final results
+# Creating list for protocol stripped URLs
 matchURLs = []
 
-# Stripping URL off the protocol
-for i in range(len(search)):
-    url = re.sub(r"https?://", '', search[i], re.IGNORECASE)
-    matchURLs.append(url)
+# Stripping URL off the http/https protocol
+for match in range(len(search)):
+    strippedURL = re.sub(r"https?://", '', search[match], re.IGNORECASE)
+    matchURLs.append(strippedURL)
 print(matchURLs)
 
 # Counting instances of URL and storing them in dictionary variable "results"
 # I.e. creating tally counter in "results" dictionary
-results = dict((x, matchURLs.count(x)) for x in set(matchURLs))
+results = dict((instance, matchURLs.count(instance)) for instance in set(matchURLs))
 
 # Sorting results in descending order
 results = dict(sorted(results.items(), key=lambda kv: kv[1], reverse=True))
