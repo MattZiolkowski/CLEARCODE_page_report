@@ -30,7 +30,7 @@ Windows command prompt or with other Pythonic environment (e.g. PyCharm).
 # Built With
 
 Python 3.6.1
--using 're' framework (regex) - Standart framework included into Python Library.
+-using 're' and 'csv' frameworks (regex)
 -PyCharm
 
 # Authors
